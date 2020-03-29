@@ -92,56 +92,71 @@ while not ficha==0:
             ficha=ficha+aposta2*2
             print('Você venceu a Field, agora você tem {} fichas'.format(ficha))
             Field=False
-#Faze de Point
-            if Point:
-                print(' Na fase Point. Você pode fazer as seguintes apostas: Field, Any Craps, Twelve.')
-                resposta=input('Quer fazer mais alguma aposta?(s/n):')
-                if resposta=='s':
-                    resposta=input('Você deseja fazer uma Field:(s/n):')
-                    if resposta=='s':
-                        Field=True
-                        aposta2=int(input('Quanto você vai apostar?'))
-                        ficha=ficha-aposta2    
-                    else:
-                        None
-                    resposta=input('Você deseja fazer uma Any Craps:(s/n):')
-                    if resposta=='s':
-                            Any_Craps=True
-                            aposta3=int(input('Quanto você vai apostar?'))
-                            ficha=ficha-aposta3
-                    else:
-                            None
-                    resposta=input('Você deseja fazer uma Twelve:(s/n):')
-                    if resposta=='s':
-                        Twelve=True
-                        aposta4=int(input('Quanto você vai apostar?'))
-                        ficha=ficha-aposta4
-                    else:
-                        None
-                ponto=dados
-                i=0
-                acertou=False
-                while not acertou:
-                    dados=7
-                    if dados == 7:
-                        print('Você perdeu o Point, agora você tem {0} fichas, O dado foi rolado {1} vezes'.format(ficha, i))
-                        Point=False
-                        acertou=True
-                    elif dados== ponto:
-                            ficha=ficha+aposta1*2
-                            print('Parabéns você venceu o Point, agora você tem {0} fichas /n O dado foi rolado {1}'.format(ficha, i))
-                            Point=False
-                            acertou=True
-                    else:
-                        None
-            else:
-                None
 #Aposta de Any_Craps
                 
 #Aposta de Twelve
-                
-#Repetições de apostas
 
+#Faze de Point
+    if Point:
+        print(' Na fase Point. Você pode fazer as seguintes apostas: Field, Any Craps, Twelve.')
+        resposta=input('Quer fazer mais alguma aposta?(s/n):')
+        if resposta=='s':
+            resposta=input('Você deseja fazer uma Field:(s/n):')
+            if resposta=='s':
+                Field=True
+                aposta2=int(input('Quanto você vai apostar?'))
+                ficha=ficha-aposta2    
+            else:
+                None
+            resposta=input('Você deseja fazer uma Any Craps:(s/n):')
+            if resposta=='s':
+                    Any_Craps=True
+                    aposta3=int(input('Quanto você vai apostar?'))
+                    ficha=ficha-aposta3
+            else:
+                    None
+            resposta=input('Você deseja fazer uma Twelve:(s/n):')
+            if resposta=='s':
+                Twelve=True
+                aposta4=int(input('Quanto você vai apostar?'))
+                ficha=ficha-aposta4
+            else:
+                None
+        ponto=dados
+        i=0
+        acertou=False
+        while not acertou:
+            dados=7
+            if dados == 7:
+                print('Você perdeu o Point, agora você tem {0} fichas, O dado foi rolado {1} vezes'.format(ficha, i))
+                Point=False
+                acertou=True
+            elif dados== ponto:
+                    ficha=ficha+aposta1*2
+                    print('Parabéns você venceu o Point, agora você tem {0} fichas /n O dado foi rolado {1}'.format(ficha, i))
+                    Point=False
+                    acertou=True
+            else:
+                None
+    else:
+        None                
+#Repetições de apostas
+    if Field:
+            if dados==5 or dados==6 or dados==7 or dados==8:
+                print('Você perdeu a Field, agora você tem {} fichas'.format(ficha))
+                Field=False
+            elif dados== 2:
+                ficha=ficha+aposta2*3
+                print('Você venceu a Field com um 2, agora você tem {} fichas'.format(ficha))
+                Field=False
+            elif dados== 12:
+                ficha=ficha+aposta2*4
+                print('Você venceu a Field com um 12, agora você tem {} fichas'.format(ficha))
+                Field=False
+            else:
+                ficha=ficha+aposta2*2
+                print('Você venceu a Field, agora você tem {} fichas'.format(ficha))
+                Field=False
 #Esse e o último bloco do while de fichas
     resposta=input('Você vai querer continuar jogar?(s/n):')
     if resposta=='s':
