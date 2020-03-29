@@ -60,7 +60,10 @@ if Pass_Line:
                 dados=0
                 i+=1
             if dados== 7
-            print('Você perdeu, agora você tem {0} fichas /n O dado voi rolado {1}'.format(ficha, i))
+            print('Você perdeu, agora você tem {0} fichas /n O dado foi rolado {1}'.format(ficha, i))
+            else:
+                ficha+=aposta*2
+                print('Parabéns você venceu, agora você tem {0} fichas /n O dado foi rolado {1}'.format(ficha, i))
 
 
 
