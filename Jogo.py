@@ -56,9 +56,11 @@ if Pass_Line:
             ponto=dados
             dados=10
             i=0
-            while dados!=ponto:
+            while dados!=ponto or 7:
                 dados=0
-                
                 i+=1
+            if dados== 7
+            print('Você perdeu, agora você tem {0} fichas /n O dado voi rolado {1}'.format(ficha, i))
+
 
 
