@@ -25,7 +25,7 @@ aposta2=0
 aposta3=0
 aposta4=0
 #Rolada de dados
-dados=0
+dados=1
 
 #Resposta do user
 resposta=input('Você vai querer jogar?(s/n):')
