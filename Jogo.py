@@ -25,7 +25,7 @@ aposta2=0
 aposta3=0
 aposta4=0
 #Rolada de dados
-dados=6
+dados=0
 
 #Resposta do user
 resposta=input('Você vai querer jogar?(s/n):')
@@ -128,7 +128,7 @@ while not ficha==0:
         i=0
         acertou=False
         while not acertou:
-            dados=7
+            dados=0
             if dados == 7:
                 print('Você perdeu o Point, agora você tem {0} fichas, O dado foi rolado {1} vezes'.format(ficha, i))
                 Point=False
