@@ -1,3 +1,6 @@
+
+
+
 # -*- coding: utf-8 -*-
 """
 Created on Sun Mar 29 19:32:38 2020
@@ -21,7 +24,7 @@ aposta1=0
 aposta2=0
 aposta3=0
 aposta4=0
-#Roladoe de dados
+#Rolada de dados
 dados=6
 
 #Resposta do user
