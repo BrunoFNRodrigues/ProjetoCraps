@@ -58,10 +58,9 @@ if resposta=='s':
         None
 else:
     print('Até a próxima!')
-    ficha=0
-while not ficha==0:
-    
+    ficha=0  
 #Aposta Pass Line Bet
+while not ficha==0:
     if Pass_Line_Bet:
         Point=False
         if dados==7 or dados==11:
@@ -165,5 +164,6 @@ while not ficha==0:
         print('Até a próxima!')
         break
     
+
 
 
