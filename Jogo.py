@@ -32,7 +32,6 @@ print ("Valor do 1º dado -> ", dado1)
 print ("Valor do 2º dado -> ", dado2)
 dados=dado1+dado2
 print('Soma do valor dos dados jogados:')
-print(dados)
 
 #Resposta do user
 resposta=input('Você vai querer jogar?(s/n):')
@@ -102,8 +101,26 @@ while not ficha==0:
             print('Você venceu a Field, agora você tem {} fichas'.format(ficha))
             Field=False
 #Aposta de Any_Craps
-                
+    if Any_Craps:
+        if dados==2 or dados==3 or dados==12:
+            ficha = aposta3*8 + ficha
+            print('Você venceu a Any_Craps, agora você tem {} fichas'.format(ficha))
+            Any_Craps = False
+        else:
+            print('Você perdeu a Any_Craps, agora você tem {} fichas'.format(ficha))
+            Any_Craps = False
+
+
 #Aposta de Twelve
+    if Twelve:
+        if dados==12:
+            ficha = aposta4*31 + ficha
+            print('Você venceu a Twelve, agora você tem {} fichas'.format(ficha))
+            Twelve = False
+        else:
+            print('Você perdeu a Twelve, agora você tem {} fichas'.format(ficha))
+            Twelve = False
+
 
 #Faze de Point
     if Point:
