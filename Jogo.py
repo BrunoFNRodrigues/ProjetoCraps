@@ -28,9 +28,9 @@ aposta4=0
 from random import randint
 dado1=(randint(1,6))
 dado2=(randint(1,6)) 
+dados=dado1+dado2
 print ("Valor do 1º dado -> ", dado1)
 print ("Valor do 2º dado -> ", dado2)
-dados=dado1+dado2
 print('Soma do valor dos dados jogados:')
 
 #Resposta do user
@@ -152,7 +152,10 @@ while not ficha==0:
         i=0
         acertou=False
         while not acertou:
-            dados=0
+            dado1=(randint(1,6))
+            dado2=(randint(1,6)) 
+            dados=dado1+dado2
+            i+=1
             if dados == 7:
                 print('Você perdeu o Point, agora você tem {0} fichas, O dado foi rolado {1} vezes'.format(ficha, i))
                 Point=False
