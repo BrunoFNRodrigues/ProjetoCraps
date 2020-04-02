@@ -25,7 +25,14 @@ aposta2=0
 aposta3=0
 aposta4=0
 #Rolada de dados
-dados=1
+from random import randint
+dado1=(randint(1,6))
+dado2=(randint(1,6)) 
+print ("Valor do 1º dado -> ", dado1)
+print ("Valor do 2º dado -> ", dado2)
+dados=dado1+dado2
+print('Soma do valor dos dados jogados:')
+print(dados)
 
 #Resposta do user
 resposta=input('Você vai querer jogar?(s/n):')
