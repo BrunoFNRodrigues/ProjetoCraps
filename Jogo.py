@@ -20,6 +20,7 @@ Pass_Line_Bet=False
 Field=False
 Any_Craps=False
 Twelve=False
+Point=False
 aposta1=0
 aposta2=0
 aposta3=0
@@ -68,7 +69,6 @@ else:
 #Aposta Pass Line Bet
 while not ficha==0:
     if Pass_Line_Bet:
-        Point=False
         if dados==7 or dados==11:
             ficha=ficha+aposta1*2
             print('Parabéns você ganhou Pass Line Bet, agora você tem {} fichas.'.format(ficha))
@@ -207,7 +207,32 @@ while not ficha==0:
 #Esse e o último bloco do while de fichas
     resposta=input('Você vai querer continuar jogar?(s/n):')
     if resposta=='s':
-        None
+        resposta=input('Você deseja fazer uma Pass Line Bet:(s/n):')
+        if resposta=='s':
+            Pass_Line_Bet=True
+            aposta1=int(input('Quanto você vai apostar?'))
+            ficha=ficha-aposta1
+        resposta=input('Você deseja fazer uma Field:(s/n):')
+        if resposta=='s':
+            Field=True
+            aposta2=int(input('Quanto você vai apostar?'))
+            ficha=ficha-aposta2    
+        else:
+            None
+        resposta=input('Você deseja fazer uma Any Craps:(s/n):')
+        if resposta=='s':
+                Any_Craps=True
+                aposta3=int(input('Quanto você vai apostar?'))
+                ficha=ficha-aposta3
+        else:
+                None
+        resposta=input('Você deseja fazer uma Twelve:(s/n):')
+        if resposta=='s':
+            Twelve=True
+            aposta4=int(input('Quanto você vai apostar?'))
+            ficha=ficha-aposta4
+        else:
+            None
     else:
         print('Até a próxima!')
         break
