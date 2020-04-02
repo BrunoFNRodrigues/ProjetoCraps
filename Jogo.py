@@ -67,7 +67,7 @@ else:
     print('Até a próxima!')
     ficha=0  
 #Aposta Pass Line Bet
-while not ficha==0:
+while not ficha<=0:
     if Pass_Line_Bet:
         if dados==7 or dados==11:
             ficha=ficha+aposta1*2
