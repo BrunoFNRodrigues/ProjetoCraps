@@ -5,3 +5,5 @@ Regras Os recursos básicos do jogo é feito por meio de rodadas sucessivas, ond
 #Field – Esta aposta pode ser feita em qualquer fase do jogo. Nesta aposta se os dados derem 5, 6, 7 ou 8 o jogador perde tudo, já se derem 3, 4, 9, 10, ou 11 o jogador ganha o mesmo valor que apostou, já se a soma for 2 o jogador ganha o dobro do que apostou (se apostou 10 fichas, fica com as 10 e ganha mais 20), e finalmente se sai 12 nos dados o jogador ganha o triplo (se apostou 10 fichas, fica com as 10 e ganha mais 30). 
 #Any Craps – Esta aposta pode ser feita em qualquer fase do jogo. Nesta aposta se o dados derem 2, 3 ou 12 o jogador ganha sete vezes o que apostou, senão perde a aposta. 
 Twelve – Esta aposta pode ser feita em qualquer fase do jogo. Nesta aposta se o dados derem 12 o jogador ganha trinta vezes o que apostou, senão perde a aposta.
+
+Esse trabalho foi realizado por BRUNO FREITAS E PAULO AUGUSTO
